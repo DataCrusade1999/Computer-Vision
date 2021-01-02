@@ -28,5 +28,8 @@ Line=cv.line(blank,(0,0),(blank.shape[1]//2,blank.shape[0]//2),(255,255,255),3)
 cv.imshow("Line",Line)
 
 
+Text=cv.putText(blank,"Ashutosh Pandey",(190,300),cv.FONT_HERSHEY_DUPLEX,1.0,(0,0,255),2)
+cv.imshow("Name",Text)
+
 cv.waitKey(0)
 
