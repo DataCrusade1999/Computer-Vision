@@ -8,7 +8,9 @@ def Grayscale(capture):
             cv.imshow("Video",frame)
 
             if cv.waitKey(20) & 0xFF==ord('e'):
-                break     
+                break 
+        capture.release()
+        cv.destroyAllWindows()
     except: 
         AssertionError
         capture.release()
