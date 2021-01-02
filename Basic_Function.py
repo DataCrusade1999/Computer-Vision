@@ -57,3 +57,10 @@ resized = cv.resize(img,(500,500),interpolation=cv.INTER_CUBIC)
 cv.imshow("Resized",resized)
 cv.waitKey(0)
 cv.destroyAllWindows()
+
+#Cropping
+img = cv.imread(r"Photos\Image4.jpg")
+cropped = img[100:300,500:700]
+cv.imshow("Cropped",cropped)
+cv.waitKey(0)
+cv.destroyAllWindows()
