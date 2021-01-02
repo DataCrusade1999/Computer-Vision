@@ -25,7 +25,9 @@ cv.destroyAllWindows()
 
 #Video in Grayscale
 capture = cv.VideoCapture(r'Videos\Video0.webm')
+
 Grayscale(capture)
+
 
 
 #Edge Cascade
