@@ -1,7 +1,7 @@
 import cv2 as cv
 
 
-def resized(frame,scale=0.75):
+def resized(frame,scale=1):
     width=int(frame.shape[1]*scale)
     height=int(frame.shape[0]*scale)
     dimension=(width,height)
@@ -9,7 +9,7 @@ def resized(frame,scale=0.75):
     return cv.resize(frame,dimension,interpolation=cv.INTER_AREA)
 
 
-def resizevideo(capture,scale=None):
+def resizevideo(capture,scale=1):
     try:
         while True:
             isTrue,frame = capture.read()
